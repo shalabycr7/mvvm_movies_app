@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_movies_app/constants/app_icons.dart';
-import 'package:mvvm_movies_app/widgets/movies_widget.dart';
+import 'package:mvvm_movies_app/widgets/movies/movies_widget.dart';
 
 class MoviesScreen extends StatelessWidget {
   const MoviesScreen({super.key});

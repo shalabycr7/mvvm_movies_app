@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_movies_app/constants/app_constants.dart';
 import 'package:mvvm_movies_app/constants/app_icons.dart';
-import 'package:mvvm_movies_app/widgets/cached_image.dart';
-import 'package:mvvm_movies_app/widgets/fav_btn.dart';
-import 'package:mvvm_movies_app/widgets/genres_list_widget.dart';
+import 'package:mvvm_movies_app/widgets/movies/cached_image.dart';
+import 'package:mvvm_movies_app/widgets/movies/fav_btn.dart';
+import 'package:mvvm_movies_app/widgets/movies/genres_list_widget.dart';
 
 class MoviesWidget extends StatelessWidget {
   const MoviesWidget({super.key});
