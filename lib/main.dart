@@ -12,10 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    MaterialTheme theme = MaterialTheme();
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Movies',
-      theme: AppThemeData.lightTheme,
+      theme: theme.light(),
       home: const MoviesScreen(),
     );
   }
