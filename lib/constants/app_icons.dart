@@ -7,4 +7,5 @@ class AppIcons {
   static const IconData error = Icons.error;
   static const IconData rate = Icons.star;
   static const IconData timer = Icons.watch_later_outlined;
+  static const IconData delete = Icons.delete;
 }
