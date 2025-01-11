@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_movies_app/constants/app_icons.dart';
+import 'package:mvvm_movies_app/widgets/movies_widget.dart';
 
 class MoviesScreen extends StatelessWidget {
   const MoviesScreen({super.key});
@@ -8,10 +9,11 @@ class MoviesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Movies'),
+        title: const Text('Popular Movies'),
         actions: [
           IconButton(
-            icon: const Icon(AppIcons.fav),
+            icon: const Icon(AppIcons.favFilled),
+            color: Colors.red,
             onPressed: () {},
           ),
           IconButton(
@@ -20,9 +22,11 @@ class MoviesScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Text('movies'),
-      ),
+      body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return MoviesWidget();
+          }),
     );
   }
 }
